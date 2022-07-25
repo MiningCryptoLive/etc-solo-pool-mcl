@@ -1,0 +1,1 @@
+# etc-solo-pool

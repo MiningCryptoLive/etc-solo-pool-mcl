@@ -1,17 +1,11 @@
-## ETChash-Solo-Pool
-Based on https://github.com/caesarsalad/eth-solo-pool and https://github.com/etclabscore/open-etc-pool
-
-Web frontend from https://github.com/esprezzo/open-perkle-pool
-
-Originally from https://github.com/sammy007/open-ethereum-pool
-
+## ETC-Solo-Pool
 ### Building on Ubuntu 18.04
 
 **Install dependencies**
 
 * Install Go Programming Language, Redis and Nginx
 ```sh
-sudo apt install golang redis-server nginx
+sudo apt install golang redis-server nginx -y
 ```
 
 * Install Node Version Manager as described here https://github.com/nvm-sh/nvm#install--update-script
@@ -222,7 +216,7 @@ Example below is "all-in-one" config with all modules enabled:
             // The minimum distribution of mining reward in GWei (Shannon). It is 3 ETC now.
             "threshold": 3000000000,
             // Perform BGSAVE on Redis after successful payouts session.
-            "bgsave": false
+            "bgsave": false,
             "concurrentTx": 10
     }
 }
